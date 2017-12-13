@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DEF180A34E399AEE50608DB /* Pods_BiometricAuthenticationDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EBE0BAAFDA8C8CCE105DDA /* Pods_BiometricAuthenticationDemo.framework */; };
 		A9440CAF1FE16877005E9603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9440CAE1FE16877005E9603 /* AppDelegate.swift */; };
 		A9440CB11FE16877005E9603 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9440CB01FE16877005E9603 /* ViewController.swift */; };
 		A9440CB41FE16877005E9603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9440CB21FE16877005E9603 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		443723F88BFBA1158C09F45B /* Pods-BiometricAuthenticationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometricAuthenticationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BiometricAuthenticationDemo/Pods-BiometricAuthenticationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A9440CAB1FE16877005E9603 /* BiometricAuthenticationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiometricAuthenticationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9440CAE1FE16877005E9603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9440CB01FE16877005E9603 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		A9440CB51FE16877005E9603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9440CB81FE16877005E9603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9440CBA1FE16877005E9603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AC786C82F8441302D2499F /* Pods-BiometricAuthenticationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BiometricAuthenticationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BiometricAuthenticationDemo/Pods-BiometricAuthenticationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E9EBE0BAAFDA8C8CCE105DDA /* Pods_BiometricAuthenticationDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BiometricAuthenticationDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DEF180A34E399AEE50608DB /* Pods_BiometricAuthenticationDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				A9440CAD1FE16877005E9603 /* BiometricAuthenticationDemo */,
 				A9440CAC1FE16877005E9603 /* Products */,
+				F8F55B7E380E105FCBF8285D /* Pods */,
+				EE3D66D0CA3A2EFDD6755953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = BiometricAuthenticationDemo;
 			sourceTree = "<group>";
 		};
+		EE3D66D0CA3A2EFDD6755953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9EBE0BAAFDA8C8CCE105DDA /* Pods_BiometricAuthenticationDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8F55B7E380E105FCBF8285D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				443723F88BFBA1158C09F45B /* Pods-BiometricAuthenticationDemo.debug.xcconfig */,
+				D1AC786C82F8441302D2499F /* Pods-BiometricAuthenticationDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9440CBD1FE16877005E9603 /* Build configuration list for PBXNativeTarget "BiometricAuthenticationDemo" */;
 			buildPhases = (
+				B60ADB542216AB6FFBA4769D /* [CP] Check Pods Manifest.lock */,
 				A9440CA71FE16877005E9603 /* Sources */,
 				A9440CA81FE16877005E9603 /* Frameworks */,
 				A9440CA91FE16877005E9603 /* Resources */,
+				309F02B9AB3797EC3014AB43 /* [CP] Embed Pods Frameworks */,
+				BACC41950671BA58F83E4954 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		309F02B9AB3797EC3014AB43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BiometricAuthenticationDemo/Pods-BiometricAuthenticationDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiometricAuthenticationDemo/Pods-BiometricAuthenticationDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60ADB542216AB6FFBA4769D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BiometricAuthenticationDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACC41950671BA58F83E4954 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BiometricAuthenticationDemo/Pods-BiometricAuthenticationDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A9440CA71FE16877005E9603 /* Sources */ = {
@@ -272,9 +353,11 @@
 		};
 		A9440CBE1FE16877005E9603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 443723F88BFBA1158C09F45B /* Pods-BiometricAuthenticationDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3T9EXWMZ2;
 				INFOPLIST_FILE = BiometricAuthenticationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dev7.BiometricAuthenticationDemo;
@@ -286,9 +369,11 @@
 		};
 		A9440CBF1FE16877005E9603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1AC786C82F8441302D2499F /* Pods-BiometricAuthenticationDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X3T9EXWMZ2;
 				INFOPLIST_FILE = BiometricAuthenticationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Dev7.BiometricAuthenticationDemo;
